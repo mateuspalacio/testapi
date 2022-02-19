@@ -25,3 +25,5 @@ E:\Projetos College\TestApi\Api\obj\Debug\net6.0\Api.dll
 E:\Projetos College\TestApi\Api\obj\Debug\net6.0\ref\Api.dll
 E:\Projetos College\TestApi\Api\obj\Debug\net6.0\Api.pdb
 E:\Projetos College\TestApi\Api\obj\Debug\net6.0\Api.genruntimeconfig.cache
+E:\Projetos College\TestApi\Api\bin\Debug\net6.0\AspNetCoreRateLimit.dll
+E:\Projetos College\TestApi\Api\bin\Debug\net6.0\Newtonsoft.Json.dll
