@@ -1,3 +1,4 @@
+using Api.Exceptions;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -21,12 +22,16 @@ namespace Api.Controllers
         }
 
         [HttpGet(Name = "GetAncient")]
-        public Ancient Get()
+        public Ancient Get([FromQuery] User u)
         {
-            return new Ancient()
+            if(u != null)
             {
-                Name = Ancients[Random.Shared.Next(Ancients.Length)]
-            };
+                return new Ancient()
+                {
+                    Name = Ancients[Random.Shared.Next(Ancients.Length)]
+                };
+            }
+            throw new UserNotFoundException();
         }
     }
 }

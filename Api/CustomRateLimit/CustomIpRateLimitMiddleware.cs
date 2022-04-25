@@ -35,7 +35,8 @@ namespace Api.CustomRateLimit
             defaultInterpolatedStringHandler.AppendFormatted(httpContext.TraceIdentifier);
             defaultInterpolatedStringHandler.AppendLiteral(". MonitorMode: ");
             defaultInterpolatedStringHandler.AppendFormatted(rule.MonitorMode);
-            defaultInterpolatedStringHandler.AppendLiteral(" Manipulated by the devs");
+            defaultInterpolatedStringHandler.AppendLiteral(" Manipulated by the devs ");
+            defaultInterpolatedStringHandler.AppendFormatted(httpContext.Request.Query["Username"]);
             logger.LogInformation(defaultInterpolatedStringHandler.ToStringAndClear());
         }
     }

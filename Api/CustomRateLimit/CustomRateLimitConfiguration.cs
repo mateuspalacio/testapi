@@ -18,7 +18,7 @@ namespace Api.CustomRateLimit
     {
         public Task<string> ResolveClientAsync(HttpContext httpContext)
         {
-            Console.WriteLine( httpContext.Request.Host.Value);
+            Console.WriteLine(httpContext.Request.Query["Username"]);
             return Task.FromResult<string>(httpContext.Request.Query["APIKey"]);
         }
     }
