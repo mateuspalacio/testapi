@@ -1,3 +1,4 @@
+using Api.CustomRateLimit;
 using AspNetCoreRateLimit;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
@@ -61,26 +62,26 @@ builder.Services.AddSingleton<IIpPolicyStore, MemoryCacheIpPolicyStore>();
 builder.Services.AddSingleton<IRateLimitCounterStore, MemoryCacheRateLimitCounterStore>();
 //builder.Services.AddDistributedRateLimiting<AsyncKeyLockProcessingStrategy>();
 builder.Services.AddInMemoryRateLimiting();
-builder.Services.AddSingleton<IRateLimitConfiguration, RateLimitConfiguration>();
+builder.Services.AddSingleton<IRateLimitConfiguration, CustomRateLimitConfiguration>();
 
-builder.Services.AddAuthorization(options =>
-{
-    options.AddPolicy("ApiScope", policy =>
-    {
-        policy.RequireAuthenticatedUser();
-        policy.RequireClaim("scope", "Api");
-    });
-});
+//builder.Services.AddAuthorization(options =>
+//{
+//    options.AddPolicy("ApiScope", policy =>
+//    {
+//        policy.RequireAuthenticatedUser();
+//        policy.RequireClaim("scope", "Api");
+//    });
+//});
 
-builder.Services.AddAuthentication("Bearer").AddJwtBearer("Bearer", options =>
-{
-    options.Authority = "https://localhost:5001";
+//builder.Services.AddAuthentication("Bearer").AddJwtBearer("Bearer", options =>
+//{
+//    options.Authority = "https://localhost:5001";
 
-    options.TokenValidationParameters = new TokenValidationParameters
-    {
-        ValidateAudience = false
-    };
-});
+//    options.TokenValidationParameters = new TokenValidationParameters
+//    {
+//        ValidateAudience = false
+//    };
+//});
 
 var app = builder.Build();
 // Configure the HTTP request pipeline.
@@ -93,16 +94,18 @@ if (app.Environment.IsDevelopment())
 app.UseRouting();
 
 app.UseHttpsRedirection();
-app.UseIpRateLimiting();
+//app.UseIpRateLimiting();
+app.UseMiddleware<CustomIpRateLimitMiddleware>(Array.Empty<object>());
 
-app.UseAuthentication();
-app.UseAuthorization();
+//app.UseAuthentication();
+//app.UseAuthorization();
 
-app.UseEndpoints(endpoints =>
-{
-    endpoints.MapControllers()
-        .RequireAuthorization("ApiScope");
-});
+//app.UseEndpoints(endpoints =>
+//{
+//    endpoints.MapControllers()
+//        //.RequireAuthorization("ApiScope")
+//        ;
+//});
 
 
 app.MapControllers();
