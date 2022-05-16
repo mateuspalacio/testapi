@@ -1,20 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Projetos College\\TestApi\\Client\\Client.csproj": {}
+    "C:\\Users\\USUARIO\\testapi\\Client\\Client.csproj": {}
   },
   "projects": {
-    "E:\\Projetos College\\TestApi\\Client\\Client.csproj": {
+    "C:\\Users\\USUARIO\\testapi\\Client\\Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Projetos College\\TestApi\\Client\\Client.csproj",
+        "projectUniqueName": "C:\\Users\\USUARIO\\testapi\\Client\\Client.csproj",
         "projectName": "Client",
-        "projectPath": "E:\\Projetos College\\TestApi\\Client\\Client.csproj",
-        "packagesPath": "C:\\Users\\Steve\\.nuget\\packages\\",
-        "outputPath": "E:\\Projetos College\\TestApi\\Client\\obj\\",
+        "projectPath": "C:\\Users\\USUARIO\\testapi\\Client\\Client.csproj",
+        "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\USUARIO\\testapi\\Client\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Steve\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\USUARIO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -68,7 +73,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }

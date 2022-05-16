@@ -1,7 +1,9 @@
 using Api.CustomRateLimit;
+using Api.Data;
 using AspNetCoreRateLimit;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using Microsoft.EntityFrameworkCore;
 using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -12,6 +14,7 @@ builder.Services.AddMemoryCache();
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddDbContext<TesteDbContext>(opt => opt.UseMySql(builder.Configuration.GetConnectionString("TesteContext"), ServerVersion.AutoDetect(builder.Configuration.GetConnectionString("TesteContext"))));
 
 
 string tokenUrl = "http://localhost:5001";
