@@ -1,3 +1,4 @@
+using Api.CustomRateLimit;
 using AspNetCoreRateLimit;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
@@ -50,10 +51,6 @@ string tokenUrl = "http://localhost:5001";
                 });
 });
 
-
-
-
-
 builder.Services.Configure<IpRateLimitOptions>(builder.Configuration.GetSection("IpRateLimiting"));
 //builder.Services.Configure<IpRateLimitPolicies>(builder.Configuration.GetSection("IpRateLimitPolicies"));
 
@@ -61,7 +58,7 @@ builder.Services.AddSingleton<IIpPolicyStore, MemoryCacheIpPolicyStore>();
 builder.Services.AddSingleton<IRateLimitCounterStore, MemoryCacheRateLimitCounterStore>();
 //builder.Services.AddDistributedRateLimiting<AsyncKeyLockProcessingStrategy>();
 builder.Services.AddInMemoryRateLimiting();
-builder.Services.AddSingleton<IRateLimitConfiguration, RateLimitConfiguration>();
+builder.Services.AddSingleton<IRateLimitConfiguration, CustomRateLimitConfiguration>();
 
 builder.Services.AddAuthorization(options =>
 {
@@ -93,7 +90,8 @@ if (app.Environment.IsDevelopment())
 app.UseRouting();
 
 app.UseHttpsRedirection();
-app.UseIpRateLimiting();
+//app.UseIpRateLimiting();
+app.UseMiddleware<CustomIpRateLimitMiddleware>(Array.Empty<object>());
 
 app.UseAuthentication();
 app.UseAuthorization();
@@ -101,7 +99,8 @@ app.UseAuthorization();
 app.UseEndpoints(endpoints =>
 {
     endpoints.MapControllers()
-        .RequireAuthorization("ApiScope");
+        .RequireAuthorization("ApiScope")
+        ;
 });
 
 

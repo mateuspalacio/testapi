@@ -40,3 +40,45 @@ C:\Users\USUARIO\testapi\IdentityServer\obj\Debug\net6.0\refint\IdentityServer.d
 C:\Users\USUARIO\testapi\IdentityServer\obj\Debug\net6.0\IdentityServer.pdb
 C:\Users\USUARIO\testapi\IdentityServer\obj\Debug\net6.0\IdentityServer.genruntimeconfig.cache
 C:\Users\USUARIO\testapi\IdentityServer\obj\Debug\net6.0\ref\IdentityServer.dll
+E:\Projetos College\TestApi\IdentityServer\bin\Debug\net6.0\IdentityServer.exe
+E:\Projetos College\TestApi\IdentityServer\bin\Debug\net6.0\IdentityServer.deps.json
+E:\Projetos College\TestApi\IdentityServer\bin\Debug\net6.0\IdentityServer.runtimeconfig.json
+E:\Projetos College\TestApi\IdentityServer\bin\Debug\net6.0\IdentityServer.dll
+E:\Projetos College\TestApi\IdentityServer\bin\Debug\net6.0\ref\IdentityServer.dll
+E:\Projetos College\TestApi\IdentityServer\bin\Debug\net6.0\IdentityServer.pdb
+E:\Projetos College\TestApi\IdentityServer\bin\Debug\net6.0\IdentityModel.dll
+E:\Projetos College\TestApi\IdentityServer\bin\Debug\net6.0\IdentityServer4.dll
+E:\Projetos College\TestApi\IdentityServer\bin\Debug\net6.0\IdentityServer4.Storage.dll
+E:\Projetos College\TestApi\IdentityServer\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
+E:\Projetos College\TestApi\IdentityServer\bin\Debug\net6.0\Microsoft.DotNet.PlatformAbstractions.dll
+E:\Projetos College\TestApi\IdentityServer\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+E:\Projetos College\TestApi\IdentityServer\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\Projetos College\TestApi\IdentityServer\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+E:\Projetos College\TestApi\IdentityServer\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+E:\Projetos College\TestApi\IdentityServer\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\Projetos College\TestApi\IdentityServer\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+E:\Projetos College\TestApi\IdentityServer\bin\Debug\net6.0\Newtonsoft.Json.dll
+E:\Projetos College\TestApi\IdentityServer\bin\Debug\net6.0\Serilog.dll
+E:\Projetos College\TestApi\IdentityServer\bin\Debug\net6.0\Serilog.AspNetCore.dll
+E:\Projetos College\TestApi\IdentityServer\bin\Debug\net6.0\Serilog.Extensions.Hosting.dll
+E:\Projetos College\TestApi\IdentityServer\bin\Debug\net6.0\Serilog.Extensions.Logging.dll
+E:\Projetos College\TestApi\IdentityServer\bin\Debug\net6.0\Serilog.Formatting.Compact.dll
+E:\Projetos College\TestApi\IdentityServer\bin\Debug\net6.0\Serilog.Settings.Configuration.dll
+E:\Projetos College\TestApi\IdentityServer\bin\Debug\net6.0\Serilog.Sinks.Console.dll
+E:\Projetos College\TestApi\IdentityServer\bin\Debug\net6.0\Serilog.Sinks.Debug.dll
+E:\Projetos College\TestApi\IdentityServer\bin\Debug\net6.0\Serilog.Sinks.File.dll
+E:\Projetos College\TestApi\IdentityServer\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+E:\Projetos College\TestApi\IdentityServer\obj\Debug\net6.0\IdentityServer.csproj.AssemblyReference.cache
+E:\Projetos College\TestApi\IdentityServer\obj\Debug\net6.0\IdentityServer.GeneratedMSBuildEditorConfig.editorconfig
+E:\Projetos College\TestApi\IdentityServer\obj\Debug\net6.0\IdentityServer.AssemblyInfoInputs.cache
+E:\Projetos College\TestApi\IdentityServer\obj\Debug\net6.0\IdentityServer.AssemblyInfo.cs
+E:\Projetos College\TestApi\IdentityServer\obj\Debug\net6.0\IdentityServer.csproj.CoreCompileInputs.cache
+E:\Projetos College\TestApi\IdentityServer\obj\Debug\net6.0\IdentityServer.MvcApplicationPartsAssemblyInfo.cache
+E:\Projetos College\TestApi\IdentityServer\obj\Debug\net6.0\staticwebassets.build.json
+E:\Projetos College\TestApi\IdentityServer\obj\Debug\net6.0\staticwebassets.development.json
+E:\Projetos College\TestApi\IdentityServer\obj\Debug\net6.0\scopedcss\bundle\IdentityServer.styles.css
+E:\Projetos College\TestApi\IdentityServer\obj\Debug\net6.0\IdentityServer.csproj.CopyComplete
+E:\Projetos College\TestApi\IdentityServer\obj\Debug\net6.0\IdentityServer.dll
+E:\Projetos College\TestApi\IdentityServer\obj\Debug\net6.0\ref\IdentityServer.dll
+E:\Projetos College\TestApi\IdentityServer\obj\Debug\net6.0\IdentityServer.pdb
+E:\Projetos College\TestApi\IdentityServer\obj\Debug\net6.0\IdentityServer.genruntimeconfig.cache
