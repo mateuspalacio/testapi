@@ -22,10 +22,10 @@ namespace Api.Controllers
             _logger = logger;
         }
 
-        [HttpGet(Name = "GetAncient")]
-        public Ancient Get([FromQuery] User u)
+        [HttpPost]
+        public Ancient Post([FromBody] Req r)
         {
-            if(u != null)
+            if(r != null)
             {
                 return new Ancient()
                 {

@@ -22,3 +22,6 @@ C:\Users\USUARIO\testapi\Client\bin\Debug\net6.0\System.Web.WebPages.Deployment.
 C:\Users\USUARIO\testapi\Client\bin\Debug\net6.0\System.Web.WebPages.Razor.dll
 C:\Users\USUARIO\testapi\Client\bin\Debug\net6.0\System.Web.WebPages.dll
 C:\Users\USUARIO\testapi\Client\bin\Debug\net6.0\Microsoft.Web.Infrastructure.dll
+E:\Projetos College\TestApi\Client\obj\Debug\net6.0\Client.dll
+E:\Projetos College\TestApi\Client\obj\Debug\net6.0\refint\Client.dll
+E:\Projetos College\TestApi\Client\obj\Debug\net6.0\Client.pdb

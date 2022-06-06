@@ -42,11 +42,8 @@ E:\Projetos College\TestApi\IdentityServer\bin\Debug\net6.0\IdentityServer.exe
 E:\Projetos College\TestApi\IdentityServer\bin\Debug\net6.0\IdentityServer.deps.json
 E:\Projetos College\TestApi\IdentityServer\bin\Debug\net6.0\IdentityServer.runtimeconfig.json
 E:\Projetos College\TestApi\IdentityServer\bin\Debug\net6.0\IdentityServer.dll
-E:\Projetos College\TestApi\IdentityServer\bin\Debug\net6.0\ref\IdentityServer.dll
 E:\Projetos College\TestApi\IdentityServer\bin\Debug\net6.0\IdentityServer.pdb
 E:\Projetos College\TestApi\IdentityServer\bin\Debug\net6.0\IdentityModel.dll
-E:\Projetos College\TestApi\IdentityServer\bin\Debug\net6.0\IdentityServer4.dll
-E:\Projetos College\TestApi\IdentityServer\bin\Debug\net6.0\IdentityServer4.Storage.dll
 E:\Projetos College\TestApi\IdentityServer\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
 E:\Projetos College\TestApi\IdentityServer\bin\Debug\net6.0\Microsoft.DotNet.PlatformAbstractions.dll
 E:\Projetos College\TestApi\IdentityServer\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
@@ -83,3 +80,8 @@ E:\Projetos College\TestApi\IdentityServer\obj\Debug\net6.0\IdentityServer.genru
 C:\Users\USUARIO\testapi\IdentityServer\bin\Debug\net6.0\Duende.IdentityServer.dll
 C:\Users\USUARIO\testapi\IdentityServer\bin\Debug\net6.0\Duende.IdentityServer.Storage.dll
 C:\Users\USUARIO\testapi\IdentityServer\bin\Debug\net6.0\keys\is-signing-key-403A24D9462ABFAA99181F902E7A2155.json
+E:\Projetos College\TestApi\IdentityServer\bin\Debug\net6.0\keys\is-signing-key-403A24D9462ABFAA99181F902E7A2155.json
+E:\Projetos College\TestApi\IdentityServer\bin\Debug\net6.0\Duende.IdentityServer.dll
+E:\Projetos College\TestApi\IdentityServer\bin\Debug\net6.0\Duende.IdentityServer.Storage.dll
+E:\Projetos College\TestApi\IdentityServer\obj\Debug\net6.0\refint\IdentityServer.dll
+E:\Projetos College\TestApi\IdentityServer\bin\Debug\net6.0\keys\is-signing-key-D292DCB0E1E3DEED051BFF59F401F8CC.json

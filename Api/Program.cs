@@ -9,13 +9,16 @@ using System.Reflection;
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddOptions();
 
+
 // Add services to the container.
-builder.Services.AddMemoryCache();
-builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddDbContext<TesteDbContext>(opt => opt.UseMySql(builder.Configuration.GetConnectionString("TesteContext"), ServerVersion.AutoDetect(builder.Configuration.GetConnectionString("TesteContext"))));
+builder.Services.AddDbContext<Api.Data.TokenContext>(options =>
+    options.UseSqlite(builder.Configuration.GetConnectionString("SqliteContext")));
 
+builder.Services.AddMemoryCache();
+builder.Services.AddControllers();
 
 string tokenUrl = "http://localhost:5001";
 
@@ -62,6 +65,7 @@ builder.Services.AddSingleton<IRateLimitCounterStore, MemoryCacheRateLimitCounte
 //builder.Services.AddDistributedRateLimiting<AsyncKeyLockProcessingStrategy>();
 builder.Services.AddInMemoryRateLimiting();
 builder.Services.AddSingleton<IRateLimitConfiguration, CustomRateLimitConfiguration>();
+builder.Services.AddTransient<IRepository, Repository>();
 
 builder.Services.AddAuthorization(options =>
 {
@@ -94,8 +98,9 @@ app.UseRouting();
 
 app.UseHttpsRedirection();
 //app.UseIpRateLimiting();
-app.UseMiddleware<CustomIpRateLimitMiddleware>(Array.Empty<object>());
+app.UseMiddleware<TokenMiddleware>();
 
+app.UseMiddleware<CustomIpRateLimitMiddleware>(Array.Empty<object>());
 app.UseAuthentication();
 app.UseAuthorization();
 
